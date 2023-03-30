@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .sidebar-icon {
+    @apply relative mx-auto mt-2 mb-2
+          flex h-12 w-12 items-center justify-center rounded-3xl
+          bg-gray-800 text-green-500
+          shadow-lg transition-all duration-200
+         ease-linear hover:rounded-xl hover:bg-green-600
+          hover:text-white;
+  }
+
+  .left-dot {
+    @apply absolute -left-8 m-2 w-auto min-w-max origin-left
+          scale-0 rounded-md bg-white p-2
+          text-xs font-bold text-white shadow-md transition-all 
+          duration-100;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute left-14 m-2 w-auto min-w-max origin-left
+          scale-0 rounded-md bg-gray-900 p-2
+          text-xs font-bold text-white shadow-md transition-all 
+          duration-100;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: 'IBM Plex Sans Thai', sans-serif;
